@@ -1,7 +1,11 @@
-class Celular():
-    marca = "Samsung"
-    modelo = "Galaxy S21"
-    camara = "100 MP"
+class Celular:
+    def __init__(self, marca, modelo, camara):
+        self.marca = marca
+        self.modelo = modelo
+        self.camara = camara
 
-celular1 = Celular()
-print(celular1.camara)
+celular1 = Celular("Samsung", "Galaxy S21", "108 MP")
+celular2 = Celular("Apple", "iPhone 13", "12 MP")
+
+print(celular1.modelo)
+print(celular2.modelo)
